@@ -21,7 +21,7 @@
       }
       #home {
         padding-top: 250px;
-        background-image: url(https://picsum.photos/1200/800/?gravity=east);
+        background-image: url(https://picsum.photos/1200/800/);
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
@@ -41,6 +41,10 @@
         -webkit-border-radius: 8px;
            -moz-border-radius: 8px;
                 border-radius: 8px;
+      }
+      .spacing {
+        padding-top: 30px;
+
       }
 
 
@@ -63,10 +67,10 @@
     <section class="section" id="home">
       <div class="container">
         <div class="row">
-          <div class="col-md text-light ">
+          <div class="col-md text-light">
             <div class="h2">Departing</div>
             <div class="dropdown">
-              <button class="btn btn-xlarge btn-outline-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <button class="btn btn-xlarge btn-outline-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Dropdown
                 <span class="caret"></span>
               </button>
@@ -84,7 +88,7 @@
           <div class="col-md">
             <div class="h2 text-light"> Arriving </div>
             <div class="dropdown">
-              <button class="btn btn-xlarge btn-outline-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <button class="btn btn-xlarge btn-outline-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Dropdown
                 <span class="caret"></span>
               </button>
@@ -103,6 +107,9 @@
               <div class="form-group text-light text-center">
                 <label for="price"><u>Maximum Price</u></label>
                 <input type="text" class="form-control" id="price" placeholder="$100">
+              </div>
+              <div style="text-align: center;">
+                <button type="submit" class="btn btn-outline-warning">Submit</button>
               </div>
             </form>
           </div>
