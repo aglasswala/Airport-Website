@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title> Flight Finder </title>
     <style>
+
+
       .section {
         min-height: 1000px;
         overflow: hidden;
@@ -44,7 +46,6 @@
       }
       .spacing {
         padding-top: 30px;
-
       }
 
 
@@ -75,8 +76,8 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#" data-value="action">Action</a></li>
-                <li><a href="#" data-value="another action">Another action</a></li>
+                <li class="btn btn-lg"><a href="#" data-value="action">Action</a></li>
+                <li class="btn btn-lg"><a href="#" data-value="another action">Another action</a></li>
                 <li><a href="#" data-value="something else here">Something else here</a></li>
                 <li><a href="#" data-value="separated link">Separated link</a></li>
               </ul>
@@ -93,10 +94,10 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="#" data-value="action">Action</a></li>
-                <li><a href="#" data-value="another action">Another action</a></li>
-                <li><a href="#" data-value="something else here">Something else here</a></li>
-                <li><a href="#" data-value="separated link">Separated link</a></li>
+                <li class="btn btn-lg"><a href="#" data-value="action">Action</a></li>
+                <li class="btn btn-lg"><a href="#" data-value="another action">Another action</a></li>
+                <li class="btn btn-lg"><a href="#" data-value="something else here">Something else here</a></li>
+                <li class="btn btn-lg"><a href="#" data-value="separated link">Separated link</a></li>
               </ul>
             </div>
           </div>
@@ -135,6 +136,7 @@
 
 
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -146,18 +148,6 @@
       $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
     });
 
-    $('body').scrollspy({
-      target: '#myNav'
-    })
-    $('#myNav ul li a[href^="#"]').on('click', function(e){
-      e.preventDefault();
-      var t = this.hash;
-      $('html, body').animate({
-        scrollTop:$(this.hash).offset().top
-      }, 650,function () {
-        window.location.hash = t;
-      });
-    })
     </script>
   </body>
 </html>
