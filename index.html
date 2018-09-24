@@ -9,7 +9,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title> Flight Finder </title>
     <style>
+	    .box {
+			font-family: 'Bitter', serif;
+		    border-radius: 25px;
+		    /*background: #FFD317;*/
+			font-size: 10vw;
+			float:left;
+			text-align: center;
+			/*color: floralwhite;*/
+			margin: 50px;
+		    line-height: 30vh;
+			padding: 30px;
+		}
+		.to {
+			font-family: 'Bitter', serif;
+			text-align: center;
+	/*	    color: #FFD317;*/
+		    font-size: 3vw;
+		    height: 10vw;
+		    line-height: 40vh;
+		}
+		.form1{
+		    position: relative;
+		}
+		.formText{
+			font-family: 'Bitter', serif;
+		    color: black;
+			line-height: 0px;
+		}
 
+	.airportText{
+	    margin: 20px;
+		padding: 40px;
+	}
 
       .section {
         min-height: 1000px;
@@ -22,14 +54,14 @@
         background-color: #ccc;
       }
       #home {
-        padding-top: 250px;
+        padding-top: 100px;
         background-image: url(https://picsum.photos/1200/980/);
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-      #about {
+      #flight {
         padding-top: 250px;
-        background-image: url(https://picsum.photos/1200/900);
+        background-image: url(https://picsum.photos/1200/800);
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
@@ -41,7 +73,7 @@
         font-size: 46px; //change this to your desired size
         line-height: normal;
         -webkit-border-radius: 8px;
-           -moz-border-radius: 8px;
+      	     -moz-border-radius: 8px;
                 border-radius: 8px;
       }
       .spacing {
@@ -58,7 +90,7 @@
         <div class="collapse navbar-collapse" id="topnav">
           <ul class="navbar-nav ml-auto">
             <li><a href="#home" class="nav-link text-primary">Home</a></li>
-            <li><a href="#about" class="nav-link text-info">Next Flights</a></li>
+            <li><a href="#flight" class="nav-link text-info">Next Flights</a></li>
             <li><a href="#products" class="nav-link text-info">About</a></li>
             <li><a href="#contact" class="nav-link text-info">Contact</a></li>
           </ul>
@@ -66,76 +98,56 @@
       </div>
     </nav>
     <section class="section" id="home">
-      <div class="container">
-        <div class="row row-eq-height">
-          <div class="col-md text-light">
-            <div class="h2">Departing</div>
-            <div class="dropdown">
-              <button class="btn btn-xlarge btn-outline-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li class="btn btn-lg"><a href="#" data-value="action">Action</a></li>
-                <li class="btn btn-lg"><a href="#" data-value="another action">Another action</a></li>
-                <li><a href="#" data-value="something else here">Something else here</a></li>
-                <li><a href="#" data-value="separated link">Separated link</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <p class="h1 text-light text-center"><strong> to </strong></p>
-          </div>
-          <div class="col-md">
-            <div class="h2 text-light"> Arriving </div>
-            <div class="dropdown">
-              <button class="btn btn-xlarge btn-outline-warning dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Dropdown
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li class="btn btn-lg"><a href="#" data-value="action">Action</a></li>
-                <li class="btn btn-lg"><a href="#" data-value="another action">Another action</a></li>
-                <li class="btn btn-lg"><a href="#" data-value="something else here">Something else here</a></li>
-                <li class="btn btn-lg"><a href="#" data-value="separated link">Separated link</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-2">
-            <form>
-              <div class="form-group text-light text-center">
-                <label for="price"><u>Maximum Price</u></label>
-                <input type="text" class="form-control" id="price" placeholder="$100">
-              </div>
-              <div style="text-align: center;">
-                <button type="submit" class="btn btn-outline-warning">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    	<div class="jumbotron">
+		  <h1 class="display-4">Welcome</h1>
+		  <p class="lead">Let's get you where you need to go</p>
+		  <hr class="my-4">
+		  <p>Our Flight finder can find flights to any destination at the lowest cost</p>
+		  <p class="lead">
+		    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+		  </p>
+		</div>
     </section>
-    <section class="section" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm text-dark">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-              Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
-          </div>
-          <div class="col">
-            <img src="https://picsum.photos/1200/650" class="img-fluid rounded">
-          </div>
-        </div>
-      </div>
+    <section class="section" id="flight">
+    	<div class="container">
+    		<div class="jumbotron">
+    			<div class="display-4">Check it out</div>
+	    		<div class="row">
+	              <div class="form-group">
+	                <select class="form box btn btn-outline-warning" id="exampleFormControlSelect4" style="margin-left: 50px;">
+	                  <option>DEN</option>
+	                  <option>DFW</option>
+	                  <option>MCO</option>
+	                  <option>IAD</option>
+	                  <option>IAH</option>
+					  <option>ORD</option>
+	                  <option>SLC</option>
+	                  <option>JFK</option>
+	                  <option>SFO</option>
+	                  <option>DTW</option>
+	                </select>
+	              </div>
+				  <div class="col">
+					 <p class="to"><em>to</em></p>
+				  </div>
+				  <div class="form-group">
+	                <select class="form box" id="exampleFormControlSelect4" style="margin-right: 50px;">
+	                  <option>DEN</option>
+	                  <option>DFW</option>
+	                  <option>MCO</option>
+	                  <option>IAD</option>
+	                  <option>IAH</option>
+					  <option>ORD</option>
+	                  <option>SLC</option>
+	                  <option>JFK</option>
+	                  <option>SFO</option>
+	                  <option>DTW</option>
+	                </select>
+	              </div>
+	          </div>
+	        </div>
+    	</div>
     </section>
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
