@@ -1,18 +1,19 @@
 /*section {
   margin-left: 50px;
 }*/
-
-
-.box {
-		font-family: 'Bitter', serif;
-    border-radius: 25px;
-		font-size: 10vw;
-		float:left;
-		text-align: center;	
-		margin: 50px;
-    line-height: 30vh;
-		padding: 30px;
+.col-sm-4 {
+  border: 2px solid black;
+  text-align: center;
+  padding: 3vw 3vw;
 }
+
+.btn {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  font-family: 'Bitter', serif;
+  font-size: 5vw;
+}
+
 .to {
 	font-family: 'Bitter', serif;
 	text-align: center;
@@ -52,21 +53,7 @@
 }
 #flight {
   padding-top: 250px;
-  background-image: url(https://picsum.photos/1200/800);
+  background-image: #ffffff;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-#products {
-  background-color: rgba(50, 50, 76, 0.3);
-}
-.btn-xlarge {
-  padding: 18px 28px;
-  font-size: 46px;
-  line-height: normal;
-  -webkit-border-radius: 8px;
-	     -moz-border-radius: 8px;
-          border-radius: 8px;
-}
-.spacing {
-  padding-top: 30px;
 }
