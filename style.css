@@ -43,7 +43,9 @@
   background-size:cover;
 }
 .section:nth-child(even) {
-  background-color: #ccc;
+  background-color: white;
+        opacity: 0.9;
+
 }
 #home {
   padding-top: 100px;
@@ -60,7 +62,26 @@
 
 #products {
   padding-top: 100px;
-  background-image: url(https://picsum.photos/1200/980/);
+  background-image: url(https://st2.depositphotos.com/2691399/11484/v/950/depositphotos_114846908-stock-illustration-vintage-sky-clouds-engraving.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.welcomeText {
+    font-family: 'Bitter', serif;
+    text-align: center;
+    color: white;
+}
+
+.welcomeText-2 {
+    font-family: 'Bitter', serif;
+    position: absolute; 
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
 }
