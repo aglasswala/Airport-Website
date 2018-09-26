@@ -14,22 +14,24 @@
 <!-- <title>Flight finder</title> -->
   </head>
   <body>
-    <nav id="myNav" class="navbar navbar-light navbar-expand-sm sticky-top  justify-content-end:" style="   padding-right: 0px;">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="topnav">
-          <ul class="navbar-nav ml-auto">
-            <li><a href="#home" class="nav-link text-primary">Home</a></li>
-            <li><a href="#flight" class="nav-link text-info">Find Flights</a></li>
-            <li><a href="#products" class="nav-link text-info">About</a></li>
-            <li><a href="#contact" class="nav-link text-info">Contact</a></li>
-          </ul>
-        </div>
+    <nav id="myNav" class="navbar navbar-light bg-light fixed-top navbar-expand-sm">
+        <a class="navbar-brand" href="#">
+          <img src="plane.png" width="25" height="25" class="d-inline-block align-top" alt="">
+          Flight Finder
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarMain"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navBarMain">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#intro" class="nav-link">Welcome</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </div>
     </nav>
-      <div class ="header-container">
-            <div class = "video-container">
-                <video preload = "true" autoplay muted loop id="myVideo">
+      <div class="header-container">
+            <div class="video-container">
+                <video preload="true" autoplay muted loop id="myVideo">
                     <source src="Airport_Background.mp4" type = "video/mp4">
                 </video>
             </div>
