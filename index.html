@@ -19,15 +19,13 @@
 
     <nav id="myNav" class="navbar navbar-light bg-light fixed-top navbar-expand-sm">
         <a class="navbar-brand" href="#">
-          <img src="plane.png" width="25" height="25" class="d-inline-block align-top" alt="">
           Flight Finder
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarMain"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse justify-content-end" id="navBarMain">
         <ul class="navbar-nav">
           <li class="nav-item"><a href="#intro" class="nav-link">Welcome</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="#flights" class="nav-link">Let's fly</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
@@ -35,30 +33,29 @@
 
     <!-- Video for the background -->
 
-      <div class="header-container">
-            <div class="video-container">
-                <video preload="true" autoplay muted loop id="myVideo">
-                    <source src="Airport_Background.mp4" type = "video/mp4">
-                </video>
-            </div>
-      </div>
+    <div class="header-container">
+        <div class="video-container">
+            <video preload="true" autoplay muted loop id="myVideo">
+                <source src="Airport_Background.mp4" type = "video/mp4">
+            </video>
+        </div>
+    </div>
 
     <!-- Welcome Section -->  
 
-    <section class="section">
+    <section class="section" id="intro">
 		  <h1 class="welcomeText" style="font-size: 15vw;">Flights</h1>
       <p class="welcomeText" style="line-height: 10px;"><em>Let's get you where you need to go</em></p>
       <br><br><br><br><br><br><br>
 		  <p class="welcomeText" style="font-size: 15px;">Our Flight finder can find flights<br> to any destination at the lowest cost</p>
 		  <p class="lead text-center">
-		    <a class="btn btn-light btn-lg" href="#flight" role="button">Try It Out</a>
+		    <a class="btn btn-light btn-lg" href="#flights" role="button">Try It Out</a>
 		  </p>
-
-      </section>
+    </section>
 
       <!-- Flight Section -->
 
-      <section class="section" style="color: white;">
+    <section class="section" id="flights">
       <div class="container text-warning" style="font-family: 'Bitter', serif;">
         <div class="display-4">Check it out</div>
         <hr class="my-4">
@@ -99,13 +96,19 @@
               </div>
             </div>
           </div>
+          <hr class="my-4">
+          <div class="row">
+            <div class="col-sm text-center">
+              <button class="btn btn-warning btn-lg">Let's fly</button>
+            </div>
+          </div>
         </div>
       </section>
-            <section id="products" class="section">
+      <section class="section" id="products" >
         <div class="container">
           <div class="display-3">Products with Cards</div>
           <div class="row padding">
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="card">
                 <h4 class="card-header">Featured</h4>
                 <img class="card-img-top" src="https://picsum.photos/350/150/?random">
@@ -119,7 +122,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="card">
                 <h4 class="card-header">Featured</h4>
                 <img class="card-img-top" src="https://picsum.photos/350/150/?random">
@@ -133,35 +136,79 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="card">
                 <h4 class="card-header">Featured</h4>
                 <img class="card-img-top" src="https://picsum.photos/350/150/?random">
                 <div class="card-body">
                   <div class="card-title">New Product #3</div>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                    Nullam dictum felis eu pede mollis pretium.</p>
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
                 </div>
               </div>
             </div>
+            <hr class="col-sm-12">
           </div>
         </div>
       </section>
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="display-3">Contact</div>
+          <div class="jumbotron">
+            <div class="h4">Let us know what you think</div>
+            <form>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+              </div>
+              <div class="form-group">
+                <label for="message">Type your message here</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    <!-- Footer -->
+      <footer class="page-footer font-small blue bg-light">
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="#intro"> There's no copyright, don't worry
+        </div>
+      </footer>
+    <!-- Footer -->
+    </body>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-    $(".dropdown-menu li a").click(function(){
-      $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
-      $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-    });
-
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 650, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
   </body>
+
 </html>
