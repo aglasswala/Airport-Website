@@ -65,15 +65,15 @@
             <div class="form-group">
               <select class="form box btn btn-flights btn-outline-warning btn-block" id="dep" onchange="myFunction()">
                   <option value="Denver, CO">DEN</option>
-                  <option value="Dallas, TX">DFW</option>
-                  <option>MCO</option>
-                  <option>IAD</option>
-                  <option>IAH</option>
-                  <option>ORD</option>
-                  <option>SLC</option>
-                  <option>JFK</option>
-                  <option>SFO</option>
-                  <option>DTW</option>
+                  <option value="Dallas Fort Worth, TX">DFW</option>
+                  <option value="Orlando, FL">MCO</option>
+                  <option value="Washington Dulles, VA">IAD</option>
+                  <option value="Houston, TX">IAH</option>
+                  <option value="Chicago O'Hare, IL">ORD</option>
+                  <option value="Salt Lake City, UT">SLC</option>
+                  <option value="John F Kennedy, NY">JFK</option>
+                  <option value="San Franciso, CA">SFO</option>
+                  <option value="Detroit, MI">DTW</option>
               </select>
             </div>
           </div>
@@ -81,19 +81,19 @@
             <p class="to text-warning"><em> to </em></p>
           </div>
           <div class="col-sm-4">
-            <h1 id="arrival"></h1>
+            <h4 id="arrival">Denver, CO</h4>
             <div class="form-group">
-                <select class="form box btn btn-flights btn-outline-warning btn-block" id="arr">
-                  <option value="Denver">DEN</option>
-                  <option>DFW</option>
-                  <option>MCO</option>
-                  <option>IAD</option>
-                  <option>IAH</option>
-                  <option>ORD</option>
-                  <option>SLC</option>
-                  <option>JFK</option>
-                  <option>SFO</option>
-                  <option>DTW</option>
+                <select class="form box btn btn-flights btn-outline-warning btn-block" id="arr" onchange="myFunctionArr()">
+                  <option value="Denver, CO">DEN</option>
+                  <option value="Dallas Fort Worth, TX">DFW</option>
+                  <option value="Orlando, FL">MCO</option>
+                  <option value="Washington Dulles, VA">IAD</option>
+                  <option value="Houston, TX">IAH</option>
+                  <option value="Chicago O'Hare, IL">ORD</option>
+                  <option value="Salt Lake City, UT">SLC</option>
+                  <option value="John F Kennedy, NY">JFK</option>
+                  <option value="San Franciso, CA">SFO</option>
+                  <option value="Detroit, MI">DTW</option>
                 </select>
               </div>
             </div>
@@ -201,7 +201,10 @@
         const x = document.getElementById("dep").value;
         document.getElementById("depart").innerHTML = x;
       }
-
+      function myFunctionArr() {
+        const x = document.getElementById("arr").value;
+        document.getElementById("arrival").innerHTML = x;
+      }
     </script>
 
     <script>
