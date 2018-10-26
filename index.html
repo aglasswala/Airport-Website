@@ -72,7 +72,7 @@
                   <option value="Chicago O'Hare, IL">ORD</option>
                   <option value="Salt Lake City, UT">SLC</option>
                   <option value="John F Kennedy, NY">JFK</option>
-                  <option value="San Franciso, CA">SFO</option>
+                  <option value="San Francisco, CA">SFO</option>
                   <option value="Detroit, MI">DTW</option>
               </select>
             </div>
@@ -92,7 +92,7 @@
                   <option value="Chicago O'Hare, IL">ORD</option>
                   <option value="Salt Lake City, UT">SLC</option>
                   <option value="John F Kennedy, NY">JFK</option>
-                  <option value="San Franciso, CA">SFO</option>
+                  <option value="San Francisco, CA">SFO</option>
                   <option value="Detroit, MI">DTW</option>
                 </select>
               </div>
@@ -101,57 +101,14 @@
           <hr class="my-4">
           <div class="row">
             <div class="col-sm text-center">
-              <button class="btn btn-warning btn-lg">Let's fly</button>
+              <button class="btn btn-warning btn-lg" onclick="calc()">Let's fly</button>
             </div>
           </div>
         </div>
       </section>
       <section class="section" id="products" >
-        <div class="container">
-          <div class="display-3">Products with Cards</div>
-          <div class="row padding">
-            <div class="col-lg-4">
-              <div class="card">
-                <h4 class="card-header">Featured</h4>
-                <img class="card-img-top" src="https://picsum.photos/350/150/?random">
-                <div class="card-body">
-                  <div class="card-title">New Product #1</div>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                    Nullam dictum felis eu pede mollis pretium.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card">
-                <h4 class="card-header">Featured</h4>
-                <img class="card-img-top" src="https://picsum.photos/350/150/?random">
-                <div class="card-body">
-                  <div class="card-title">New Product #2</div>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-                    vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                    Nullam dictum felis eu pede mollis pretium.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card">
-                <h4 class="card-header">Featured</h4>
-                <img class="card-img-top" src="https://picsum.photos/350/150/?random">
-                <div class="card-body">
-                  <div class="card-title">New Product #3</div>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-                </div>
-              </div>
-            </div>
-            <hr class="col-sm-12">
-          </div>
-        </div>
+        <p id="demo" class="text-white"> </p>
+        <p id="demo1" class="text-white"> </p>
       </section>
       <section id="contact" class="section">
         <div class="container">
@@ -196,17 +153,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script type="text/javascript">
-      function myFunction() {
-        const x = document.getElementById("dep").value;
-        document.getElementById("depart").innerHTML = x;
-      }
-      function myFunctionArr() {
-        const x = document.getElementById("arr").value;
-        document.getElementById("arrival").innerHTML = x;
-      }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 
     <script>
     $(document).ready(function(){
