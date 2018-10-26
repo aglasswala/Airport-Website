@@ -36,6 +36,7 @@
 }
 
 .section {
+  min-height: 700px;
   height: 100vh;
   overflow: hidden;
   position: relative;
