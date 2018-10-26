@@ -140,3 +140,22 @@ function readyGraph(paths) {
     }
     return graph;
 }
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 650, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+$(document).ready(function() {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  })
+})
