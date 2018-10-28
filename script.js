@@ -16,15 +16,19 @@ function calc() {
   var card = $('<div class="col-sm-3"><div class="card" style="width: 18rem;"><img class="card-img-top" alt="Card image cap"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>')
 
   var x = shortestPath.path.length;
-  for(var i = 0, j = x; i < j; i++) {
-    if(i == 0 || i % 4 == 0) {
-      var appendEl = $('<div class="row"></div>').appendTo('#cardDisplay');
+  console.log(start)
+  $('#cardDisplay').empty();
+  if(x === 0) {
+    $('<div class="row"><div class="col-sm""><div class="card"><img class="card-img-top" alt="Card image cap" src="https://picsum.photos/200/50"><div class="card-body"><h5 class="card-title">' + start + '</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div></div>').appendTo('#cardDisplay')
+  } else {
+    for(var i = 0, j = x; i < j; i++) {
+      if(i == 0 || i % 4 == 0) {
+        var appendEl = $('<div class="row"></div>').appendTo('#cardDisplay');
+        $('<div class="col-sm"><div class="card"><img class="card-img-top" alt="Card image cap" src="https://picsum.photos/200/50"><div class="card-body"><h5 class="card-title">' + start + '</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>').appendTo(appendEl);
+      }
+      $('<div class="col-sm" ><div class="card"><img class="card-img-top" alt="Card image cap" src="https://picsum.photos/200/50"><div class="card-body"><h5 class="card-title">' + shortestPath.path[i] + '</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>').appendTo(appendEl);
     }
-    $('<div class="col-sm-3"><div class="card" style="width: 18rem;"><img class="card-img-top" alt="Card image cap"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>').appendTo(appendEl);
-
-    console.log("10")
-  } 
-
+  }
 }
 
 
