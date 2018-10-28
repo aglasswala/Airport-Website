@@ -8,15 +8,7 @@ function calc() {
   // shortestPath is an object that has an array called path
   // Path has values that lead to dest and path.dist is the total price
 
-
-  // document.getElementById("demo").innerHTML = shortestPath.path;
-  // document.getElementById("demo1").innerHTML = shortestPath.path.dist;
-
-  var col = $('<div class="col-sm-3" style="border: 3px solid black"> </div>')
-  var card = $('<div class="col-sm-3"><div class="card" style="width: 18rem;"><img class="card-img-top" alt="Card image cap"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>')
-
   var x = shortestPath.path.length;
-  console.log(start)
   $('#cardDisplay').empty();
   if(x === 0) {
     $('<div class="row"><div class="col-sm""><div class="card"><img class="card-img-top" alt="Card image cap" src="https://picsum.photos/200/50"><div class="card-body"><h5 class="card-title">' + start + '</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div></div>').appendTo('#cardDisplay')
