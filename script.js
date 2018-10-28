@@ -4,10 +4,29 @@ function calc() {
   var finish = document.getElementById("arr").value;
 
   var shortestPath = solve(graph,start,finish);
-  console.log(shortestPath);
-  document.getElementById("demo").innerHTML = shortestPath.path;
-  document.getElementById("demo1").innerHTML = shortestPath.path.dist;
+
+  // shortestPath is an object that has an array called path
+  // Path has values that lead to dest and path.dist is the total price
+
+
+  // document.getElementById("demo").innerHTML = shortestPath.path;
+  // document.getElementById("demo1").innerHTML = shortestPath.path.dist;
+
+  var col = $('<div class="col-sm-3" style="border: 3px solid black"> </div>')
+  var card = $('<div class="col-sm-3"><div class="card" style="width: 18rem;"><img class="card-img-top" alt="Card image cap"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>')
+
+  var x = shortestPath.path.length;
+  for(var i = 0, j = x; i < j; i++) {
+    if(i == 0 || i % 4 == 0) {
+      var appendEl = $('<div class="row"></div>').appendTo('#cardDisplay');
+    }
+    $('<div class="col-sm-3"><div class="card" style="width: 18rem;"><img class="card-img-top" alt="Card image cap"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p><a href="#" class="btn btn-primary">Go somewhere</a></div></div></div>').appendTo(appendEl);
+
+    console.log("10")
+  } 
+
 }
+
 
 function myFunction() {
   const x = document.getElementById("dep").value;
@@ -141,6 +160,7 @@ function readyGraph(paths) {
     return graph;
 }
 
+
 $(document).ready(function(){
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -148,14 +168,15 @@ $(document).ready(function(){
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 650, function(){
+      }, 700, function(){
         window.location.hash = hash;
       });
     } 
   });
 });
+
 $(document).ready(function() {
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
-  })
+  });
 })
