@@ -45,22 +45,20 @@
 
     <section class="section container-fluid" id="intro">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 align-items-start">
           <h1 class="welcomeText" style="font-size: 15vw;">Flights</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12">
-          <p class="welcomeText" style="line-height: 10px;"><em>Let's get you where you need to go</em></p>
+        <div class="col-sm-12 align-items-center">
+          <p class="welcomeText" style="line-height: 10px; font-size: 3vw"><em>Let's get you where you need to go</em></p>
         </div>
       </div>
-      <hr class="my-4">
+      <br><br>
       <div class="row">
-        <div class="col-sm-12 text-center">
-          <p class="welcomeText-2  align-bottom" style="font-size: 15px;">Our Flight finder can find flights<br> to any destination at the lowest cost</p>
-          <p class="lead text-center">
-            <a class="btn btn-light btn-lg" href="#flights" role="button">Try It Out</a>
-          </p>
+        <div class="col-sm-12 text-center align-items-end">
+          <p class="welcomeText-2" style="font-size: 15px;">Our Flight finder can find flights<br> to any destination at the lowest cost</p>
+          <p class="lead text-center"><a class="btn btn-light btn-lg" href="#flights" role="button">Try It Out</a></p>
         </div>
       </div>
     </section>
@@ -69,11 +67,12 @@
 
     <section class="section" id="flights">
       <div class="container text-warning" style="font-family: 'Bitter', serif;">
-        <div class="display-4">Check it out</div>
+        <div class="display-5">Check it out</div>
         <hr class="my-4">
         <div class="row">
           <div class="col-md-4">
-            <h4 id="depart">Denver, CO</h4>
+            <h6 style="line-height: 1px; font-size: 15px"><em>Departing From:</em></h6>
+            <h2 id="depart">Denver, CO</h2>
             <div class="form-group">
               <select class="form box btn btn-flights btn-outline-warning btn-block" id="dep" onchange="myFunction()">
                   <option value="Denver, CO">DEN</option>
@@ -90,10 +89,11 @@
             </div>
           </div>
           <div class="col-md-4">
-            <p class="to text-warning"><em> to </em></p>
+            <p class="to text-warning"><em>to</em></p>
           </div>
           <div class="col-md-4">
-            <h4 id="arrival">Denver, CO</h4>
+            <h6 style="line-height: 1px; font-size: 15px"><em>Arriving To:</em></h6>
+            <h2 id="arrival">Denver, CO</h2>
             <div class="form-group">
                 <select class="form box btn btn-flights btn-outline-warning btn-block" id="arr" onchange="myFunctionArr()">
                   <option value="Denver, CO">DEN</option>
@@ -125,7 +125,7 @@
       </section>
       <section id="contact" class="section">
         <div class="container">
-          <div class="display-3">Contact</div>
+          <div class="display-4">Contact</div>
           <div class="jumbotron container-fluid">
             <div class="h4">Let us know what you think</div>
             <form>
@@ -153,7 +153,7 @@
     <!-- Footer -->
       <footer class="page-footer font-small blue bg-light">
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
-          <a href="#intro"> There's no copyright, don't worry
+            <a href="#intro"> There's no copyright, don't worry</a>
         </div>
       </footer>
     <!-- Footer -->
