@@ -79,6 +79,9 @@ body {
     color: white;
 }
 
+.topTextBottom{
+}
+
 #myVideo {
     position: fixed;
     right: 0;
