@@ -8,14 +8,14 @@ function calc() {
   // Emptys display and inserts correct cards
   $('#cardDisplay').empty();
   if(x === 0) {
-    $('<div class="row"><div class="col-sm mb-r""><div class="card">' + getPic(start) + '<div class="card-body"><h5 class="card-title">' + start + '</h5>' + getMess(start) + '</div></div></div></div>').appendTo('#cardDisplay')
+    $('<div class="row"><div class="col-lg d-flex align-items-stretch""><div class="card mx-auto" style="width: 25rem">' + getPic(start) + '<div class="card-body"><h5 class="card-title">' + start + '</h5>' + getMess(start) + '</div></div></div></div>').appendTo('#cardDisplay')
   } else {
     for(var i = 0, j = x; i < j; i++) {
       if(i == 0 || i % 4 == 0) {
         var appendEl = $('<div class="row"></div>').appendTo('#cardDisplay');
-        $('<div class="col-sm mb-r"><div class="card">' + getPic(start) + '<div class="card-body"><h5 class="card-title">' + start + '</h5>' + getMess(start) +'</div></div></div>').appendTo(appendEl);
+        $('<div class="col-lg d-flex align-items-stretch"><div class="card">' + getPic(start) + '<div class="card-body"><h5 class="card-title">' + start + '</h5>' + getMess(start) +'</div></div></div>').appendTo(appendEl);
       }
-      $('<div class="col-sm mb-r"><div class="card">' + getPic(shortestPath.path[i]) + '<div class="card-body"><h5 class="card-title">' + shortestPath.path[i] + '</h5>' + getMess(shortestPath.path[i]) + '</div></div></div>').appendTo(appendEl);
+      $('<div class="col-lg d-flex align-items-stretch"><div class="card">' + getPic(shortestPath.path[i]) + '<div class="card-body"><h5 class="card-title">' + shortestPath.path[i] + '</h5>' + getMess(shortestPath.path[i]) + '</div></div></div>').appendTo(appendEl);
     }
   }
 }

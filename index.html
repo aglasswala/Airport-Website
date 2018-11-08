@@ -68,64 +68,66 @@
       <!-- Flight Section -->
 
     <section class="section" id="flights">
-      <div class="container text-warning" style="font-family: 'Bitter', serif;">
-        <div class="display-5">Check it out</div>
+      <div class="container">
+        <div class="display-1"> Let's Fly </div>
         <hr class="my-4">
-        <div class="row">
-          <div class="col-md-4">
-            <h6 style="line-height: 1px; font-size: 15px"><em>Departing From:</em></h6>
-            <h2 id="depart">Denver, CO</h2>
-            <div class="form-group">
-              <select class="form box btn btn-flights btn-outline-warning btn-block" id="dep" onchange="myFunction()">
-                  <option value="Denver, CO">DEN</option>
-                  <option value="Dallas Fort Worth, TX">DFW</option>
-                  <option value="Orlando, FL">MCO</option>
-                  <option value="Washington Dulles, VA">IAD</option>
-                  <option value="Houston, TX">IAH</option>
-                  <option value="Chicago O'Hare, IL">ORD</option>
-                  <option value="Salt Lake City, UT">SLC</option>
-                  <option value="John F Kennedy, NY">JFK</option>
-                  <option value="San Francisco, CA">SFO</option>
-                  <option value="Detroit, MI">DTW</option>
-              </select>
+        <div class="jumbotron bg-info">
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="h5">Departing from </div>
+              <h2 id="depart">Denver, CO</h2>
+              <div class="form-group">
+                <select class="form-control form-control-lg" id="dep" onchange="myFunction()">
+                    <option value="Denver, CO">DEN</option>
+                    <option value="Dallas Fort Worth, TX">DFW</option>
+                    <option value="Orlando, FL">MCO</option>
+                    <option value="Washington Dulles, VA">IAD</option>
+                    <option value="Houston, TX">IAH</option>
+                    <option value="Chicago O'Hare, IL">ORD</option>
+                    <option value="Salt Lake City, UT">SLC</option>
+                    <option value="John F Kennedy, NY">JFK</option>
+                    <option value="San Francisco, CA">SFO</option>
+                    <option value="Detroit, MI">DTW</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <p class="to text-warning"><em>to</em></p>
-          </div>
-          <div class="col-md-4">
-            <h6 style="line-height: 1px; font-size: 15px"><em>Arriving To:</em></h6>
-            <h2 id="arrival">Denver, CO</h2>
-            <div class="form-group">
-                <select class="form box btn btn-flights btn-outline-warning btn-block" id="arr" onchange="myFunctionArr()">
-                  <option value="Denver, CO">DEN</option>
-                  <option value="Dallas Fort Worth, TX">DFW</option>
-                  <option value="Orlando, FL">MCO</option>
-                  <option value="Washington Dulles, VA">IAD</option>
-                  <option value="Houston, TX">IAH</option>
-                  <option value="Chicago O'Hare, IL">ORD</option>
-                  <option value="Salt Lake City, UT">SLC</option>
-                  <option value="John F Kennedy, NY">JFK</option>
-                  <option value="San Francisco, CA">SFO</option>
-                  <option value="Detroit, MI">DTW</option>
+            <div class="col-lg-2 text-center justify-content-end">
+              <p class="text-light h3">to</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="h5">Arriving to</div>
+              <h2 id="arrival">Denver, CO</h2>
+              <div class="form-group">
+                <select class="form-control form-control-lg" id="arr" onchange="myFunctionArr()">
+                    <option value="Denver, CO">DEN</option>
+                    <option value="Dallas Fort Worth, TX">DFW</option>
+                    <option value="Orlando, FL">MCO</option>
+                    <option value="Washington Dulles, VA">IAD</option>
+                    <option value="Houston, TX">IAH</option>
+                    <option value="Chicago O'Hare, IL">ORD</option>
+                    <option value="Salt Lake City, UT">SLC</option>
+                    <option value="John F Kennedy, NY">JFK</option>
+                    <option value="San Francisco, CA">SFO</option>
+                    <option value="Detroit, MI">DTW</option>
                 </select>
               </div>
             </div>
           </div>
-          <hr class="my-4">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-sm text-center">
-              <a href="#flightInfo" class="btn btn-warning btn-lg" onclick="calc()">Let's fly</a>
+              <a href="#flightInfo" class="btn btn-outline-light btn-lg" onclick="calc()">Let's fly</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
       <section class="section" id="flightInfo">
-        <div class="container-fluid">
+        <div class="container">
+          <h1 class="display-4 text-dark">Here's the plan</h1>
           <div class="jumbotron" id="cardDisplay">
-            <div class="row">
-              <div class="col-sm">
-                <div class="card">
+            <div class="row d-flex align-items-stretch">
+              <div class="col-lg">
+                <div class="card mx-auto" style="width: 25rem">
                   <img class="card-img-top" alt="Card Image Cap" src="https://cdntr1.img.sputniknews.com/images/102167/53/1021675384.jpg" height="200" width="100">
                   <div class="card-body">
                     <h5 class="card-title">Denver, CO</h5>
