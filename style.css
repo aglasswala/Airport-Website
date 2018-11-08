@@ -38,7 +38,7 @@ body {
 .section {
   min-height: 750px;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   padding: 100px 10px 0px;
   background-size:cover;
@@ -77,9 +77,6 @@ body {
 .welcomeText-2 {
     font-family: 'Bitter', serif;
     color: white;
-}
-
-.topTextBottom{
 }
 
 #myVideo {
