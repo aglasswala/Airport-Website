@@ -36,8 +36,6 @@ body {
 }
 
 .section {
-  min-height: 750px;
-  height: 100vh;
   overflow: auto;
   position: relative;
   padding: 100px 10px 0px;
