@@ -43,7 +43,7 @@
 
     <!-- Welcome Section -->  
 
-    <section class="section" id="intro">
+    <section class="section" id="intro" style="height: 100vh">
           <div class="container align-items-end">
             <div class="row">
             <div class="col-sm-12">
@@ -67,11 +67,11 @@
 
       <!-- Flight Section -->
 
-    <section class="section" id="flights">
+    <section class="section" id="flights" style="padding-top: 10vh">
       <div class="container">
         <div class="display-1"> Let's Fly </div>
         <hr class="my-4">
-        <div class="jumbotron bg-info">
+        <div class="jumbotron bg-info" style="margin-bottom: 10vh">
           <div class="row justify-content-center">
             <div class="col-lg-5">
               <div class="h5">Departing from </div>
@@ -118,12 +118,24 @@
               <a href="#flightInfo" class="btn btn-outline-light btn-lg" onclick="calc()">Let's fly</a>
             </div>
           </div>
+          <div class="row">
+            <div class="col-sm-1 align-self-end justify-content-end">
+              <a 
+                tabindex="0" 
+                id="popover" 
+                class="btn btn-outline-light rounded-circle" 
+                role="button" 
+                data-toggle="popover" 
+                data-trigger="focus" title="How does it work?" 
+                data-content="Below you'll see cards dynamically added in the order of the most efficient path. Keep in mind that the prices are predetermined">i</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
       <section class="section" id="flightInfo">
         <div class="container">
-          <h1 class="display-4 text-dark">Here's the plan</h1>
+          <h1 class="display-4 text-light">Here's the plan</h1>
           <div class="jumbotron" id="cardDisplay">
             <div class="row d-flex align-items-stretch">
               <div class="col-lg">

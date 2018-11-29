@@ -35,16 +35,14 @@ body {
 	padding: 40px;
 }
 
-.section {
-  height: 100vh;
+.section {  
+  padding-top: 7rem;
   overflow: auto;
   position: relative;
-  padding: 100px 10px 0px;
   background-size:cover;
 }
 .section:nth-child(even) {
   background-color: white;
-        opacity: 0.9;
 
 }
 #home {
